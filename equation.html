@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <title>solution</title>
+  <link rel="stylesheet" href="equation.css">
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <div id="contents">
+    <div class="choice">
+        <label><input type="radio" name="radioButton" value="1"> \( y = x^3 + 4x^2 + x + 1 \)</label><br>
+        <label><input type="radio" name="radioButton" value="2"> \( y = x^2-2 \)</label><br>
+        <label><input type="radio" name="radioButton" value="3">  \( y = -\frac{1}{2}x^2 +x+2\)</label><br>
+        <p>初期値</p>
+        <p>２分法</p>
+        <input type="text" id="Input1">
+        <input type="text" id="Input2"><br>
+        <p>ニュートン法</p>
+        <input type="text" id="Input3"><br>
+        <button type="button" id="b01" class="size">実行</button>
+      
+    </div>
+    <div class="choice" >
+        <p>選択されたグラフ</p>
+        <canvas class="myCanvas" id="graph1" width="300" height="300"></canvas>
+        <canvas class="myCanvas" id="graph1b" width="300" height="300"></canvas>
+    </div>
+  </div>
+  <div id="graph-container">
+    <p>実行結果</p>
+    <div class="canvas-container">
+      <p>2分法1回目</p>
+      <canvas id="nibun1"></canvas>
+    </div>
+    <div class="canvas-container">
+      <p>ニュートン法1回目</p>
+      <canvas id="newton1"></canvas>
+    </div>
+    <p>結果</p>
+  </div>
+  <div id="graph-container">
+    <div class="canvas-container">
+      <p>2分法2回目</p>
+      <canvas id="nibun2"></canvas>
+    </div>
+    <div class="canvas-container">
+      <p>ニュートン法2回目</p>
+      <canvas id="newton2"></canvas>
+    </div>
+    <p>結果</p>
+  </div>
+  <div id="graph-container">
+    <div class="canvas-container">
+      <p>2分法3回目</p>
+      <canvas id="nibun3"></canvas>
+    </div>
+    <div class="canvas-container">
+      <p>ニュートン法3回目</p>
+      <canvas id="newton3"></canvas>
+    </div>
+    <p>結果</p>
+  </div>
+  <div id="graph-container">
+    <div class="canvas-container">
+      <p>2分法最終</p>
+      <canvas id="nibun4"></canvas>
+    </div>
+    <div class="canvas-container">
+      <p>ニュートン法最終</p>
+      <canvas id="newton4"></canvas>
+    </div>
+    <p>結果</p>
+    <p>回数</p>
+  </div>
+</body>
+</html>
